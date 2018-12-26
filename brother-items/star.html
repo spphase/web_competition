@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>文化自信</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- 我的css文件 -->
+	<link rel="stylesheet" type="text/css" href="public-css/public-css.css">
+	<!-- 动画库 -->
+	<link rel="stylesheet" type="text/css" href="public-css/animate.css">
+	<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	body {
+			background: url(building-images/background.png);
+    	}
+    	img {
+    		display: block;
+		    max-width: 100%;
+		    height: auto;
+    	}
+
+    	.media img {
+    		margin-top: 10px;
+    		margin-bottom: 10px;
+    		margin-left: auto;
+    		margin-right: auto;
+    	}
+
+    	.blank {
+    		height: 30px;
+    		width: 100%;
+    	}
+
+    	.arcticle {
+    		margin-top: 8%;
+    		/*margin-bottom: 5%;*/
+    		/*border:3px solid #ED1128FF;*/
+    		box-shadow: 0 2px 8px 0 #939694;
+    		border-radius: 10px;
+    	}
+
+    	.art2 {
+    		margin-bottom: 8%;
+    	}
+
+    	.sights {
+    		position: relative;
+    	}
+
+    	.readwhole {
+    		position: absolute;
+    		top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+			background:rgba(0,0,0,0.2);
+			transform: scale(0.7);
+			transition: all 0.3s;
+			cursor: pointer;
+			opacity: 0;
+			text-decoration: none;
+			border-radius: 10px;
+    	}
+
+    	.readwhole .center-block {
+    		margin-top: 9%;
+    	}
+
+    	.media:hover .media-object{
+			opacity: 0.5;
+    	}
+
+    	.media:hover .readwhole {
+    		transform: scale(1);
+			opacity: 1;
+			text-decoration: none;
+    	}
+
+    </style>
+
+</head>
+<body>
+
+	<!-- 导航栏 -->
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top  fadeIn animated">
+		  <div class="container-fluid">
+		    <!-- 移动设备折叠菜单 -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a href="../index.htm" class="navbar-brand"><img src="public-img/nav-name.png" alt="素心阁" class="img-responsive"></a>
+		      
+		      <div class="navbar-brand checkbox checkbox-slider--b-flat checkbox-slider-md" id="lang" state='1'>
+				  <label>
+				    <input type="checkbox"><span>English</span>
+				  </label>
+			   </div>
+
+		    </div>
+
+		    <!-- 可折叠的链接、表单及其他内容 -->
+		    <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+		      <ul class="nav navbar-nav">
+		      <li data-target="#" ><a href="../index.htm">&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;<span class="sr-only">(current)</span></a></li>
+		      <li class="active"><a href="star.html">文化自信<span class="sr-only">(current)</span></a></li>
+		        <li><a href="poem.html">诗词歌赋 <span class="sr-only">(current)</span></a></li>
+				
+				<li><a href="cultural-relics.html">盘彝画瓷<span class="sr-only">(current)</span></a></li>
+				<li><a href="music.html">吹弹拉打<span class="sr-only">(current)</span></a></li>
+				<li><a href="building.html">亭台轩榭<span class="sr-only">(current)</span></a></li>
+				<li><a href="movie.html">中国电影<span class="sr-only">(current)</span></a></li>
+				
+		      </ul>
+		    </div>
+		</nav>
+	</header>
+
+	<section>
+		<div class="row  fadeIn animated">
+				<img src="star-images/banner.jpg" alt="文化自信" class="img-responsive">
+		</div>
+
+		<div class="blank"></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-10 col-xs-offset-1 arcticle jackInTheBox animated">
+					<div class="media">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+					      <img src="star-images/art1.png" alt="">
+					  </div>
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					  	<br>
+					    <h3 class="media-heading">深化文化改革 坚定文化自信</h3>
+					    <p>习近平总书记指出，中国有坚定的道路自信、理论自信、制度自信，其本质是建立在五千多年文明传承基础上的文化自信。</p>
+					  </div>
+					  <a href="star-arcticle1.html" class="readwhole">
+					  	<img src="star-images/readwhole.png" alt="阅读全部" class="center-block">
+					  </a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-10 arcticle art2 jackInTheBox animated">
+				  	<div class="media">
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					      <img src="star-images/art2.png" alt="">
+					  </div>
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					  <br>
+					    <h3 class="media-heading">“不忘初心”源于文化自信</h3>
+					    <p>2016年7月1日，习近平总书记在纪念建党95周年大会上号召全党“不忘初心、继续前进”。这是中国共产党站在新的历史起点上，向全党发出的政治动员，向全世界宣示的政治宣言，也是8800万名中国共产党人呐喊的时代最强音。</p>
+					  </div>
+					  <a href="star-arcticle2.html" class="readwhole">
+					  	<img src="star-images/readwhole.png" alt="阅读全部" class="center-block">
+					  </a>
+					</div>
+				  </div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- 底部版权部分 -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="container">
+					<div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-6 ">
+						<div class="container-fluid about-us">
+							<a href="about-us.html">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="../index-img/about-us.png" alt="互助小组" class="img-responsive">
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<h4 class="foot-text">关于我们</h4>
+								</div>
+							</a>
+						</div>
+						<div class="container-fluid about-us">
+							<a href="../readme.docx" data-toggle="tooltip" data-placement="top" title="点击下载查看">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="../index-img/readme.png" alt="readme" class="img-responsive">
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<h4 class="foot-text">readme</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<h4 class="foot-text">技术支持</h4>
+						<a href="http://www.bootcss.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="我们基于bootstrap3">bootstrap中文网</a><br>
+						<a href="http://jquery.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="我们使用了jquery">jQuery</a><br>
+						<a href="https://daneden.github.io/animate.css/" class="about_us" data-toggle="tooltip" data-placement="right" title="动画效果技术">Animate.css动画库</a><br>
+						<a href="http://www.htmleaf.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="运用插件帮助我们美化界面">jQuery之家</a><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<h4 class="foot-text">更多</h4>
+						<a href="star-en.html" class="about_us" data-toggle="tooltip" data-placement="left" title="切换英文版">英文版</a><br>
+						<p href="" class="about_us" data-toggle="tooltip" data-placement="left" title="我们的背景音乐">背景音乐：<br>彝族舞曲-华夏民族乐团</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- 返回顶部按钮 -->
+	<div id="turnback">
+		<div class="turnback">
+			<img src="public-img/turn-back.png">
+			<a class="turnback-text"><span>返回<br>顶部</span></a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="pubic-js/jquery-3.3.1.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件 -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="pubic-js/back.js"></script>
+	<script type="text/javascript" src="pubic-js/public.js"></script>
+	<script type="text/javascript" src="../index-js/jquery.bootstrap-autohidingnavbar.js"></script>
+	<script>
+	  $(".navbar-fixed-top").autoHidingNavbar();
+
+	  var state = $("#lang").attr("state");
+	  $("#lang").click(function(){
+	  	if (state == "1") {
+	  		$(this).attr('state','0');
+	  		$(window).attr('location','star-en.html');
+	  		$(this).reset();
+
+		  }
+		else if (state == "0") {
+			$(this).attr('state','1');
+			$(window).attr('location','star.html');
+		}
+		})
+	</script>
+
+</html>

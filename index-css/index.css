@@ -1,0 +1,508 @@
+body {
+	/*overflow-x:hidden;*/
+	padding-top: 57px;
+	position: relative;
+	background: url(../index-img/background.jpg) center center;
+	/*background-size: cover;*/
+	/*background-attachment: fixed;*/
+	font-family: "Microsoft YaHei";
+
+}
+
+section {
+	/*background-color: #f6f6f5;*/
+
+}
+
+.navbar {
+	background: url(../index-img/nav-background.png) center center;
+	background-size: cover;
+}
+
+#mynavbar {
+	/*background-color: #f6f6f5;*/
+	margin-top: 5px;
+}
+
+.navbar {
+	height: 57px;
+}
+
+.nav>li {
+    background-color: #82949c;
+    border-radius: 70px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.scroll-top  {
+	background: rgba(0,0,0,0.2);
+}
+
+
+.navbar-nav li a {
+	color: #fff;
+	font-size: 17px;
+	height: 50px;
+	line-height: 21px;
+	border-radius: 25px;
+	font-family: "weiruanyahei"；
+}
+
+.active {
+	color: #3d5351;
+}
+
+.active a,
+.navbar-nav li a:hover {
+	color: #3d5351;
+	transition: all 0.2s;
+}
+
+.navbar-header>a>img {
+	width: 160px;
+}
+
+.navbar-header .navbar-brand {
+	padding: 0;
+}
+
+.navbar-brand.checkbox.checkbox-slider--b-flat.checkbox-slider-md {
+	margin-top: 22px;
+	margin-left: 0;
+}
+
+.form-group,
+.btn {
+	margin-top: 10px;
+}
+
+#poem {
+	position: relative;
+}
+
+/*#poem .img-circle {
+	width: 216px;
+	height: 216px;
+}
+*/
+.title-text {
+	/*margin-top: 8%;*/
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+.box {
+	position: relative;
+	/*padding: 37px 0;*/
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+	box-sizing: border-box;
+	margin-right: 10px;
+	/*border:1px solid #FA1E1E;*/
+	box-shadow: 0 2px 6px 0 #C4C4C4FF;
+}
+
+.confidence-box {
+	position: relative;
+	width: 81%;
+	height: auto;
+	box-sizing: border-box;
+}
+
+.confidence-box:hover img {
+	opacity: 0.5;
+}
+
+.confidence-box:hover a {
+	transform: scale(1);
+	border-radius: 8px;
+	opacity: 1;
+}
+
+.confidence-box .overlay img {
+	position: absolute;
+	left: 40%;
+}
+
+.confidence-box .overlay p {
+	margin-top: 15%;
+}
+
+.main-img {
+	/*width: 162px;*/
+	margin-top: 13%;
+	margin-bottom: 20%;
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+
+#goforit .main-img {
+	margin-top: 5%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background:rgba(0,0,0,0.2);
+	transform: scale(0.7);
+	transition: all 0.4s;
+	cursor: pointer;
+	opacity: 0;
+	display: block;
+	z-index: 88;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.confidence-box>.overlay {
+	border-radius: 0;
+}
+
+.overlay img {
+	position: absolute;
+	bottom: 6%;
+	left: 26%;
+}
+
+.box:hover .overlay {
+	transform: scale(1);
+	opacity: 1;
+}
+
+
+.box:hover img {
+	opacity: 0.3;
+}
+
+.box .overlay .center-block,
+.confidence-box .overlay .center-block {
+	opacity: 1;
+}
+
+section p {
+	line-height: 27px;
+	position: absolute;
+	color: #3d5351;
+	font-size: 23px;
+	margin-top: 28%;
+	margin-left: 6%;
+	display: block;
+	width: 90%;
+	height: 100%;
+	border-radius: 50%;
+	font-family: "weiranyahei";
+}
+
+#poem .overlay p{
+	margin-top: 15%;
+	margin-left: 8%;
+	font-size: 16px;
+}
+
+#hanfu .overlay p{
+	margin-top: 35%;
+	font-size: 19px;
+}
+
+#music .overlay p,
+#building .overlay p,
+#movie .overlay p {
+	color: #fff;
+}
+
+#hanfu，
+#cultrular-relics,
+#music,
+#building,
+ #movie {
+	position: relative;
+}
+
+#goforit {
+	/*width: 95%;*/
+	margin-top: 8%;
+	margin-bottom: 10%;
+	border-radius: 18px;
+	/*box-shadow:   0 2px 8px 0 #B5B9B6;*/
+}
+
+#goforit blockquote {
+	position: absolute;
+	margin-top: 9%;
+}
+
+#goforit .main-img {
+	margin-bottom: 0;
+}
+
+footer {
+	color: #FFFFFF;
+	background-color: #82949c;
+}
+
+.foot-text {
+	color: #FFFFFFFF;
+	font-family: "weiruanyahei";
+}
+
+.about_us {
+  color:#FFFFFF;
+  font-family: "楷体";
+}
+
+.about-us {
+	color:#FFFFFF;
+	font-family: "楷体";
+	display: flex;
+	align-items:center;
+	margin-top: 5%;
+}
+
+.about-us img,
+.about-us h4 {
+	padding-right: 0;
+	padding-left: 0
+}
+
+#turnback {
+		width: 65px;
+		height: 65px;
+		position: fixed;
+		z-index: 5;
+		bottom: 105px;
+		right: 54px;
+		background: rgba(0,0,0,0);
+		border-radius: 50%;
+		display: none;
+		background-image: url('../index-img/turn-back.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		transition: .8;
+		-webkit-transition:.8;
+	}
+
+.turnback {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border-radius: 50%;
+	box-shadow: 3px 4px 12px 0 #939694;
+}
+
+.turnback a {
+	text-decoration: none;
+}
+
+.turnback-text {
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	border-radius: 50%;
+	background-color: #82949c;
+	transition: all 0.2s;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.turnback-text span {
+	display: block;
+    margin-top: 12%;
+    font-size: 20px;
+}
+
+#turnback:hover .turnback-text {
+	opacity: 1;
+}
+
+
+#bg_music_btn {
+    position: fixed;
+    right: 10%;
+    top: 80px;
+    z-index: 50;
+    visibility: visible;
+}
+
+#music_btn {
+	position: fixed;
+	z-index: 50;
+}
+
+@-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+.Rotation {
+     -webkit-transform: rotate(360deg);
+     animation: rotation 3s linear infinite;
+     -moz-animation: rotation 3s linear infinite;
+     -webkit-animation: rotation 3s linear infinite;
+     -o-animation: rotation 3s linear infinite;
+}
+
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		margin-bottom: 0;
+	}
+
+	.title-text {
+    /*margin-top: 0;*/
+    max-width: 100%;
+    max-height: 100%;
+	}
+
+	blockquote {
+		font-size: 3px;
+		line-height: 21px;
+	}
+
+	.box {
+		height:auto;
+	}
+}
+
+@media (min-width: 768px){
+	.navbar {
+		margin-bottom: 0;
+	}
+
+	#banner img {
+		padding: 0;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 862px) {
+	#lang {
+			transform: scale(.7);
+		    width: 80px;
+		    margin-left: -30px;
+		}
+}
+
+/*专题文字适配*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	section p {
+		font-size: 22px;
+	}
+
+	#movie .overlay p,
+	#building .overlay p,
+	#music .overlay p,
+	#cultrular-relics .overlay p {
+		margin-top: 21%;
+		font-size: 16px;
+	}
+
+	#poem .overlay p{
+		margin-top: 15%;
+		margin-left: 8%;
+		font-size: 12px;
+	}
+
+	#hanfu .overlay p{
+		margin-top: 33%;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#hanfu .overlay p{
+		margin-top: 33%;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 645px) {
+	#hanfu .overlay p{
+		margin-top: 33%;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	#hanfu .overlay p{
+		margin-top: 30%;
+		font-size: 8px;
+	}
+}
+
+/*专题标题*/
+@media screen and (max-width: 992px) {
+	#music {
+	    margin-left: 26%;
+	}
+}
+
+@media screen and (max-width: 659px) {
+	#poem .overlay p {
+	    margin-top: 15%;
+	    margin-left: 8%;
+	    font-size: 12px;
+	}
+
+	.xssize {
+		font-size: 14px;
+	}
+
+	.confidence-box .overlay p {
+	    margin-top: 8%;
+	}
+
+	section p {
+	     line-height: 1;
+	    position: absolute;
+	    color: #3d5351;
+	    font-size: 23px;
+	    margin-top: 28%;
+	    margin-left: 6%;
+	    display: block;
+	    width: 90%;
+	    height: 100%;
+	    border-radius: 50%;
+	    font-family: "weiranyahei";
+	}
+}
+
+@media screen and (max-width: 916px) and (min-width: 768px) {
+	.nav>li>a {
+	    position: relative;
+	    display: block;
+	    padding: 10px 4px;
+	}
+}
+
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-nav li a {
+		border-radius: 0;
+	}
+
+	.nav>li {
+	    background-color: #82949c;
+	    border-radius: 0;
+	}
+}

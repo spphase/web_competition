@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buildings</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- 我的css文件 -->
+	<link rel="stylesheet" type="text/css" href="public-css/public-css.css">
+	<!-- 动画库 -->
+	<link rel="stylesheet" type="text/css" href="public-css/animate.css">
+	<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	body {
+			background: url(building-images/background.png)  no-repeat;
+			background-size: cover;
+    	}
+
+    	img {
+    		display: block;
+		    max-width: 100%;
+		    height: auto;
+    	}
+
+    	.media img {
+    		margin-top: 10px;
+    		margin-bottom: 10px;
+    		margin-left: auto;
+    		margin-right: auto;
+    	}
+
+    	.blank {
+    		height: 30px;
+    		width: 100%;
+    	}
+
+    	.arcticle {
+    		margin-top: 8%;
+    		/*margin-bottom: 5%;*/
+    		/*border:3px solid #ED1128FF;*/
+    		box-shadow: 0 2px 8px 0 #939694;
+    		border-radius: 10px;
+    	}
+
+    	.arc2 {
+    		margin-bottom: 8%;
+    	}
+
+    	.sights {
+    		position: relative;
+    	}
+
+    	.modal-btn {
+    		position: absolute;
+    		top: 0;
+			left: 6%;
+			bottom: 0;
+			right: 0;
+			width: 88%;
+			height: 100%;
+			content: '';
+			background:rgba(0,0,0,0.2);
+			transform: scale(0.7);
+			transition: all 0.3s;
+			cursor: pointer;
+			opacity: 0;
+			text-decoration: none;
+			
+    	}
+
+    	.modal-btn h3 {
+    		margin-top: 30%;
+
+    	}
+
+    	.col-md-3.col-sm-4.col-xs-6:hover .sights{
+			opacity: 0.5;
+    	}
+
+    	.col-md-3.col-sm-4.col-xs-6:hover .modal-btn {
+    		transform: scale(1);
+			opacity: 1;
+			color: #000000;
+			text-decoration: none;
+    	}
+
+    	.readwhole {
+    		position: absolute;
+    		top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+			background:rgba(0,0,0,0.2);
+			transform: scale(0.7);
+			transition: all 0.3s;
+			cursor: pointer;
+			opacity: 0;
+			text-decoration: none;
+			border-radius: 10px;
+    	}
+
+    	.readwhole .center-block {
+    		margin-top: 9%;
+    	}
+
+    	.media:hover .media-object{
+			opacity: 0.5;
+    	}
+
+    	.media:hover .readwhole {
+    		transform: scale(1);
+			opacity: 1;
+			text-decoration: none;
+    	}
+    </style>
+
+</head>
+<body>
+
+	<!-- 导航栏 -->
+	<header>
+
+		<nav class="navbar navbar-default navbar-fixed-top fadeIn animated">
+		  <div class="container-fluid">
+		    <!-- 移动设备折叠菜单 -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a href="../english.html" class="navbar-brand"><img src="public-img/nav-name-en.png" alt="素心阁" class="img-responsive"></a>
+		      <div class="navbar-brand checkbox checkbox-slider--b-flat checkbox-slider-md" id="lang" state='1'>
+				  <label>
+				    <input type="checkbox"><span>中文</span>
+				  </label>
+			   </div>
+		    </div>
+
+		    <!-- 可折叠的链接、表单及其他内容 -->
+		    <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+		      <ul class="nav navbar-nav">
+		      	<li data-target="#" ><a href="../english.html">&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;<span class="sr-only">(current)</span></a></li>
+		        <li><a href="star-en.html">Policies<span class="sr-only">(current)</span></a></li>
+		        <li><a href="poem-en.html">Poems <span class="sr-only">(current)</span></a></li>
+				
+				<li><a href="cultural-relics-en.html">Antiques<span class="sr-only">(current)</span></a></li>
+				<li><a href="music-en.html">Instruments<span class="sr-only">(current)</span></a></li>
+				<li class="active"><a href="building-en.html">Buildings<span class="sr-only">(current)</span></a></li>
+				<li><a href="movie-en.html">Movies<span class="sr-only">(current)</span></a></li>
+				
+		      </ul>
+		    </div>
+		</nav>
+	</header>
+
+	<section>
+		<div class="row  fadeIn animated">
+				<img src="building-images/banner-en.jpg" alt="亭台轩榭" class="img-responsive">
+		</div>
+
+		<div class="blank"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/11.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal1" class="modal-btn">
+							<h3 class="text-center">the Tianyi Pavilion (Ningbo)</h3>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">the Tianyi Pavilion (Ningbo)</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>Located in the urban area of ​​Ningbo, Zhejiang,the Tianyi Pavilion is the earliest private collection in China. It is also the oldest library in Asia and one of the world's three largest family libraries.The Tianyi Pavilion  covers an area of ​​26,000 square meters and was built in the middle of the Ming Dynasty. It was built by Fan Qin, the right minister of the retreat.</p>
+						        <img src="building-images/11.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/12.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal2" class="modal-btn">
+							<h3 class="text-center">the Dram Tower (Xi’an)</h3>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">the Dram Tower (Xi’an)</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>the Dram Tower is located at the southern end of the North Gate of the West Street in Xi'an City. It faces the Bell Tower in the east and was built in the 13th year of Hongwu Zhu Yuanzhang. It is four years older than the Bell Tower and has a history of 625 years. The 38th year of Emperor Kangxi and the Qing Emperor Qianlong were rebuilt twice. Upstairs, the original big drum, one day beat the drums, so it is called "Drum Tower." After years of vicissitudes of life, the giant drums have long since disappeared, but the Yugu Tower stands tall. It is one of the largest drum towers in China.
+						        </p>
+						        <img src="building-images/12.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/13.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal3" class="modal-btn">
+							<h3 class="text-center">the Eastern Tower of Foguang Temple (Wutai Mountain)</h3>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">the Eastern Tower of Foguang Temple (Wutai Mountain)</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>the Eastern Tower of Foguang Temple is a world cultural heritage. It is located in Foguang New Village, Wutai County, Shanxi Province. The main hall of the temple is the East Hall. It was built in the eleventh year of the Tang Dynasty, in 857 AD. The Foguang Temple Hall is now the largest existing Tang Dynasty wood structure in China and the second early wooden structure (after the Nanchan Temple Hall in Wutai County). It broke the assertion of Japanese scholars that there was no Tang Dynasty and its previous wooden structures on the Chinese land, so it was hailed by the architect Liang Sicheng as "China's first national treasure." The temple's wooden hall in the Tang Dynasty, colorful sculptures, murals, ink book inscriptions, Jin Jianwenshu Hall, Wei Tang Tomb Tower, Tang Shijing Building, etc. are all precious cultural relics with high historical and artistic value.
+								</p>
+								<img src="building-images/13.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/14.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal4" class="modal-btn">
+							<h3 class="text-center">the Jin Memorial Temple</h3>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">the Jin Memorial Temple</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>The Jin Memorial Temple, originally known as Jin Wangxi (Tang Shuzhen), was built to commemorate the Jin (汾) king and the mother. Located on the bank of Jinshui Mountain in the southwest of Taiyuan City, Shanxi Province, there are dozens of ancient buildings in the city. The environment is elegant and comfortable, and the scenery is beautiful and beautiful. It is famous for its majestic buildings and superb statues. It is the only precious historical and cultural heritage integrating ancient Chinese ritual architecture, gardens, sculptures, murals and inscription art. It is also the center of architecture, gardening and sculpture in the world. Difficult old springs, maids, and the Madonna are known as "three gongs."
+						        </p>
+						        <img src="building-images/14.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blank"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/21.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal5" class="modal-btn">
+							<h3 class="text-center">the Dwellings in Yi County，Anhui Province</h3>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">the Dwellings in Yi County，Anhui Province</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>
+									The two ancient dwelling houses in Xidi and Hongcun, Yixian County, Anhui Province have been included in the World Cultural Heritage with their well-preserved traditional features. This is the second time that the natural and cultural landscapes in the Huangshan Scenic Area have been registered in the World Cultural Heritage Catalogue. The second city in Beijing with more than two world heritage sites, and the world's first time to include dwellings in the World Heritage List. Xidi and Hongcun Ancient Residences are located in Huangshan Scenic Area in the county of Anhui Province in eastern China. Xidi and Hongcun are the two most representative ancient villages in the southern part of Anhui. They are famous for their pastoral scenery, preserved village form, exquisite craftsmanship and rich historical and cultural connotations.</p>
+						        <img src="building-images/21.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/22.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal6" class="modal-btn">
+							<h3 class="text-center">the Ancient Architecture of Wudang Mountain</h3>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">the Ancient Architecture of Wudang Mountain</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>The two ancient dwelling houses in Xidi and Hongcun, Yixian County, Anhui Province have been included in the World Cultural Heritage with their well-preserved traditional features. This is the second time that the natural and cultural landscapes in the Huangshan Scenic Area have been registered in the World Cultural Heritage Catalogue. The second city in Beijing with more than two world heritage sites, and the world's first time to include dwellings in the World Heritage List. Xidi and Hongcun Ancient Residences are located in Huangshan Scenic Area in the county of Anhui Province in eastern China. Xidi and Hongcun are the two most representative ancient villages in the southern part of Anhui. They are famous for their pastoral scenery, preserved village form, exquisite craftsmanship and rich historical and cultural connotations.</p>
+						        <img src="building-images/22.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/23.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal7" class="modal-btn">
+							<h3 class="text-center">the Chengde Mountain Resort</h3>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">the Chengde Mountain Resort</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>Chengde Mountain Resort, the ancient Chinese imperial palace, the emperor of the Qing Dynasty to escape the heat and deal with government affairs. Located in the north of the urban area of ​​Chengde City, Hebei Province. It was built in 1703 and has been completed in the Kangxi, Yongzheng and Qianlong dynasties. It took eighty-nine years to complete. It is also known as the four famous gardens of China with the national key cultural relics protection unit, the Summer Palace, the Humble Administrator's Garden and the Lingering Garden. In December 1994, the Summer Resort and surrounding temples (River Palace) were included in the World Cultural Heritage List. There are more than 100 buildings including temples, churches, buildings, pavilions, pavilions, plaques, pavilions, Xuan, Zhai, and temples. It is one of the three ancient buildings in China.</p>
+						        <img src="building-images/23.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/24.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal8" class="modal-btn">
+							<h3 class="text-center">the Fujian Earth Building</h3>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">the Fujian Earth Building</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>the Fujian Earth Building, including the Weinan Tulou and some Hakka Earth Buildings, has a total of about 3,000. It is usually referred to as the use of unprocessed raw soil in the southwestern part of the country, and the construction of a large-scale building consisting of a group of sturdy and defensive walls, shaped like a flying saucer, scattered between the mountains and the green water. The main distribution areas are in the southwest mountainous area of ​​Fujian, China, where the Hakkas and Minnans live in the border areas of Fujian, Jiangxi, and Guangdong, including Chenzhou, which is dominated by southern Fujianese, and Longyan, where the southern Fujianese and Hakkas are half-occupied. Fujian Tulou is a unique and large-scale residential area in the world, and is known as the treasure of the traditional Han Chinese residence.</p>
+						        <img src="building-images/24.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-10 arcticle jackInTheBox animated">
+				  	<div class="media">
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					    <a href="#">
+					      <img src="building-images/arti1.png" alt="">
+					    </a>
+					  </div>
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					  	<br>
+					    <h3 class="media-heading">Do you really understand the new Chinese architecture?</h3>
+					    <br>
+					
+					    <br>
+					  </div>
+					  <a href="building-arcticle1-en.html" class="readwhole">
+					  	<img src="star-images/readwhole-en.png" alt="阅读全部" class="center-block">
+					  </a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-10 arcticle jackInTheBox animated">
+				  	<div class="media">
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					    <a href="#">
+					      <img src="building-images/arc2.png" alt="">
+					    </a>
+					  </div>
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					  <br>
+					    <h3 class="media-heading">Lizhi Zhang: Ancient Dwellings have revived the cultural memory of Hutou</h3>
+					    <br>
+					   
+					  </div>
+					  <a href="building-arcticle2-en.html" class="readwhole">
+					  	<img src="star-images/readwhole-en.png" alt="阅读全部" class="center-block">
+					  </a>
+					</div>
+				  </div>
+
+			</div>
+			<div class="blank"></div>
+		</div>
+	</section>
+
+	<!-- 底部版权部分 -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="container">
+					<div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-6 ">
+						<div class="container-fluid about-us">
+							<a href="about-us.html">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="../index-img/about-us.png" alt="互助小组" class="img-responsive">
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<h4 class="foot-text">About Us</h4>
+								</div>
+							</a>
+						</div>
+						<div class="container-fluid about-us">
+							<a href="../readme.docx" data-toggle="tooltip" data-placement="top" title="download">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="../index-img/readme.png" alt="readme" class="img-responsive">
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<h4 class="foot-text">readme</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<h4 class="foot-text">Supporting Websites</h4>
+						<a href="http://www.bootcss.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="we based on bootstrap3" target="_blank">Bootstrap Chinese Network</a><br>
+						<a href="http://jquery.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="we use jquery" target="_blank">jQuery</a><br>
+						<a href="https://daneden.github.io/animate.css/" class="about_us" data-toggle="tooltip" data-placement="right" title="funny animate" target="_blank">Animate.css</a><br>
+						<a href="http://www.htmleaf.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="" target="_blank">htmleaf.com</a><br>
+						<a href="http://glyphicons.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="fonts from Glyphicon Halflings " target="_blank">glyphicons</a><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<h4 class="foot-text">Another Languages</h4>
+						<a href="building.html" class="about_us" data-toggle="tooltip" data-placement="left" title="translate into Chinese">Chinese</a><br>
+						<h4 class="foot-text">Background Music</h4>
+						<p class="about_us" data-toggle="tooltip" data-placement="left" title="our backgroundmusic">yi People Dance music(彝族舞曲) <br>
+						from Hua Xia National Traditional Orchestra</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- 返回顶部按钮 -->
+	<div id="turnback">
+		<div class="turnback">
+			<img src="public-img/turn-back.png">
+			<a class="turnback-text"><span>返回<br>顶部</span></a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="pubic-js/jquery-3.3.1.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件 -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="pubic-js/back.js"></script>
+	<script type="text/javascript" src="pubic-js/public.js"></script>
+	<script type="text/javascript">
+		$('#Modal1').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal2').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal3').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal4').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal5').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+
+		$('#Modal6').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal7').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal8').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+	</script>
+	<script type="text/javascript" src="../index-js/jquery.bootstrap-autohidingnavbar.js"></script>
+	<script>
+	  $(".navbar-fixed-top").autoHidingNavbar();
+
+	  var state = $("#lang").attr("state");
+	  $("#lang").click(function(){
+	  	if (state == "1") {
+	  		$(this).attr('state','0');
+	  		$(window).attr('location','building.html');
+	  		$(this).reset();
+
+		  }
+		else if (state == "0") {
+			$(this).attr('state','1');
+			$(window).attr('location','building-en.html');
+		}
+		})
+	</script>
+</body>
+</html>

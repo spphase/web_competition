@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>中国电影</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- 我的css文件 -->
+	<link rel="stylesheet" type="text/css" href="public-css/public-css.css">
+	<!-- 动画库 -->
+	<link rel="stylesheet" type="text/css" href="public-css/animate.css">
+	<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	body {
+			background: url(building-images/background.png) no-repeat;
+			background-size: cover;
+    	}
+
+    	.blank {
+    		height: 30px;
+    		width: 100%;
+    	}
+
+    	.arcticle {
+    		margin-top: 8%;
+    		/*margin-bottom: 5%;*/
+    		/*border:3px solid #ED1128FF;*/
+    		box-shadow: 0 2px 8px 0 #939694;
+    		border-radius: 10px;
+    	}
+
+    	.arc2 {
+    		margin-bottom: 8%;
+    	}
+
+    	.sights {
+    		position: relative;
+    	}
+
+    	.readwhole {
+    		position: absolute;
+    		top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+			background:rgba(0,0,0,0.2);
+			transform: scale(0.7);
+			transition: all 0.3s;
+			cursor: pointer;
+			opacity: 0;
+			text-decoration: none;
+			border-radius: 10px;
+    	}
+
+    	.readwhole .center-block {
+    		margin-top: 9%;
+    	}
+
+    	.media:hover .media-object{
+			opacity: 0.5;
+    	}
+
+    	.media:hover .readwhole {
+    		transform: scale(1);
+			opacity: 1;
+			text-decoration: none;
+    	}
+    </style>
+
+</head>
+<body>
+
+	<!-- 导航栏 -->
+	<header>
+
+		<nav class="navbar navbar-default navbar-fixed-top  fadeIn animated">
+		  <div class="container-fluid">
+		    <!-- 移动设备折叠菜单 -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a href="../index.htm" class="navbar-brand"><img src="public-img/nav-name.png" alt="素心阁" class="img-responsive"></a>
+		      <div class="navbar-brand checkbox checkbox-slider--b-flat checkbox-slider-md" id="lang" state='1'>
+				  <label>
+				    <input type="checkbox"><span>English</span>
+				  </label>
+			   </div>
+		    </div>
+
+		    <!-- 可折叠的链接、表单及其他内容 -->
+		    <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+		      <ul class="nav navbar-nav">
+		      <li data-target="#" ><a href="../index.htm">&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;<span class="sr-only">(current)</span></a></li>
+		        <li><a href="star.html">文化自信<span class="sr-only">(current)</span></a></li>
+		        <li data-target="body" ><a href="poem.html">诗词歌赋 <span class="sr-only">(current)</span></a></li>
+				 
+				<li data-target="#hanfu"><a href="cultural-relics.html">盘彝画瓷<span class="sr-only">(current)</span></a></li>
+				<li data-target="music.html"><a href="music.html">吹弹拉打<span class="sr-only">(current)</span></a></li>
+				<li data-target="#music"><a href="building.html">亭台轩榭<span class="sr-only">(current)</span></a></li>
+				<li class="active" data-target="#building"><a href="movie.html">中国电影<span class="sr-only">(current)</span></a></li>
+				
+		      </ul>
+		    </div>
+		</nav>
+	</header>
+
+	<section>
+		<div class="row  fadeIn animated">
+				<img src="movie-images/banner.jpg" alt="中国电影" class="img-responsive">
+		</div>
+
+		<div class="blank"></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-10 arcticle jackInTheBox animated">
+				  	<div class="media">
+					  <div class="media-left media-top">
+					    <a href="#">
+					      <img class="media-object" src="movie-images/1.png" alt="">
+					    </a>
+					  </div>
+					  <div class="media-body">
+					  	<br>
+					    <h3 class="media-heading">你还欠历史一场皮影戏</h3>
+					    <p>皮影发源于陕西，兴盛于河北，曾传到世界各个国家，迷恋了无数外国戏迷，被世界各国的博物馆争相收藏。</p>
+					  </div>
+					  <a href="movie-arcticle1.html" class="readwhole">
+					  	<img src="star-images/readwhole.png" alt="阅读全部" class="center-block">
+					  </a>
+					</div>
+				  </div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-10 arcticle arc2 jackInTheBox animated">
+				  	<div class="media">
+					  <div class="media-left media-top">
+					    <a href="#">
+					      <img class="media-object" src="movie-images/2.png" alt="">
+					    </a>
+					  </div>
+					  <div class="media-body">
+					  <br>
+					    <h3 class="media-heading">细数电影里的这些国风元素，你可能都错过了！</h3>
+					    <p>如今中国电影在逐渐走向国际化，形式内容的多样让我们已经应接不暇。可当越来越多的外国电影已经开始借鉴中国元素并获得成功时，这不得不让大众再次把目光投向中国自己的文化。</p>
+					  </div>
+					  <a href="movie-arcticle2.html" class="readwhole">
+					  	<img src="star-images/readwhole.png" alt="阅读全部" class="center-block">
+					  </a>
+					</div>
+				  </div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- 底部版权部分 -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="container">
+					<div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-6 ">
+						<div class="container-fluid about-us">
+							<a href="about-us.html">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="../index-img/about-us.png" alt="互助小组" class="img-responsive">
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<h4 class="foot-text">关于我们</h4>
+								</div>
+							</a>
+						</div>
+						<div class="container-fluid about-us">
+							<a href="../readme.docx" data-toggle="tooltip" data-placement="top" title="点击下载查看">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="../index-img/readme.png" alt="readme" class="img-responsive">
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<h4 class="foot-text">readme</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<h4 class="foot-text">技术支持</h4>
+						<a href="http://www.bootcss.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="我们基于bootstrap3" target="_blank">bootstrap中文网</a><br>
+						<a href="http://jquery.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="我们使用了jquery" target="_blank">jQuery</a><br>
+						<a href="https://daneden.github.io/animate.css/" class="about_us" data-toggle="tooltip" data-placement="right" title="动画效果技术" target="_blank">Animate.css动画库</a><br>
+						<a href="http://www.htmleaf.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="运用插件帮助我们美化界面" target="_blank">jQuery之家</a><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<h4 class="foot-text">更多</h4>
+						<a href="" class="about_us" target="_blank" data-toggle="tooltip" data-placement="left" title="切换英文版">英文版</a><br>
+						<p href="" class="about_us" target="_blank" data-toggle="tooltip" data-placement="left" title="我们的背景音乐">背景音乐：<br>&nbsp;&nbsp;彝族舞曲-华夏民族乐团</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- 返回顶部按钮 -->
+	<div id="turnback">
+		<div class="turnback">
+			<img src="public-img/turn-back.png">
+			<a class="turnback-text"><span>返回<br>顶部</span></a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="pubic-js/jquery-3.3.1.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件 -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="pubic-js/back.js"></script>
+	<script type="text/javascript" src="pubic-js/public.js"></script>
+	<script type="text/javascript" src="../index-js/jquery.bootstrap-autohidingnavbar.js"></script>
+	<script>
+	  $(".navbar-fixed-top").autoHidingNavbar();
+
+	   var state = $("#lang").attr("state");
+	  $("#lang").click(function(){
+	  	if (state == "1") {
+	  		$(this).attr('state','0');
+	  		$(window).attr('location','movie-en.html');
+	  		$(this).reset();
+
+		  }
+		else if (state == "0") {
+			$(this).attr('state','1');
+			$(window).attr('location','movie.html');
+		}
+		})
+	</script>
+
+</html>

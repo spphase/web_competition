@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>建筑</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- 我的css文件 -->
+	<link rel="stylesheet" type="text/css" href="public-css/public-css.css">
+	<!-- 动画库 -->
+	<link rel="stylesheet" type="text/css" href="public-css/animate.css">
+	<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	.img-circle {
+    		margin-top: 40px;
+    	}
+
+    	body {
+    		background: url(building-images/background.jpg) no-repeat;
+    		background-size: cover;
+    	}
+
+    	#shift-button ul {
+    		display: flex;
+    		justify-content: space-between;
+    		flex-wrap: wrap;
+    		margin-bottom: 60px;
+    	}
+
+    	#shift-button li {
+    		border-radius: 50%;
+    	}
+
+		#shift-button a {
+    		width: 237px;
+    		height: 237px;
+    		padding: 0;
+    		border-radius: 50%;
+    		cursor: pointer;
+    	}
+
+    	#shift-button a p {
+    		font-size: 21px;
+    	}
+
+
+    	#shift-button img {
+    		margin:0 10px 0 0;
+    	}
+
+
+    	#public {
+    		margin:0 auto;
+    		position: relative;
+    		overflow:auto;
+    	}
+
+    	#public ul {
+			height: 450px;
+		}
+
+
+    	#public li {
+    		position: absolute;
+    		list-style: none;
+    		display: none;
+    	}
+
+		.content-box {
+    		width: 100%;
+    		height: auto;
+    	}
+
+
+    	#public-box .img-circle {
+			width: 239px;
+			height: 239px;
+			/*margin-top: 100px;*/
+    	}
+	
+		
+
+    	.nav.nav-tabs .active {
+    		margin-top: -4px;
+    		color: #CF4646;
+    		background-color: #f6f6f5;
+    		box-shadow: 0 8px 8px 0 #939694;
+    	}
+
+
+
+    	footer {
+    		position: relative;
+    		bottom: 0;
+    		margin-top: 35px;
+    	}
+
+		 @media screen and (max-width: 1024px){
+		 	h2 {
+				font-size: 20px;
+		 	}
+
+		 	blockquote {
+		 		font-size: 15px;
+		 	}
+			#title {
+				height: 148px;
+			}
+
+			#shift-button .img-circle {
+				width: 150px;
+    			height: 150px;
+			}
+
+			#shift-button a {
+	    		width: 150px;
+	    		height: 150px;
+	    		padding: 0;
+	    		border-radius: 50%;
+	    	}
+
+			/*#shift-button ul {
+				width: 90% auto;
+			}*/
+
+			#public-box .col-md-12 {
+				margin: 0;
+			}
+
+			#public ul {
+			height:430px;
+			}
+
+			#shift-button a p {
+    		font-size: 15px;
+    	}
+
+		 }
+
+		 @media screen and (max-width: 1295px) {
+				#shift-button .img-circle {
+				width: 150px;
+    			height: 150px;
+			}
+			#shift-button a {
+	    		width: 150px;
+	    		height: 150px;
+	    		padding: 0;
+	    		border-radius: 50%;
+	    	}
+		}
+
+		@media screen and (max-width: 593px) and (min-width: 442px) {
+			.pailie {
+	    		margin-top: 14%;
+	    	}
+
+	    	p,
+	    	blockquote {
+	    		font-size: 13px;
+	    	}
+		}
+
+		@media screen and (max-width: 441px) {
+			.pailie {
+	    		margin-left: 44%;
+	    	}
+		}
+    </style>
+</head>
+<body>
+	<!-- 导航栏 -->
+	<header>
+
+		<nav class="navbar navbar-default navbar-fixed-top fadeIn animated">
+		  <div class="container-fluid">
+		    <!-- 移动设备折叠菜单 -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		     <a href="../index.htm" class="navbar-brand"><img src="public-img/nav-name-en.png" alt="素心阁" class="img-responsive"></a>
+		      <div class="navbar-brand checkbox checkbox-slider--b-flat checkbox-slider-md" id="lang" state='1'>
+				  <label>
+				    <input type="checkbox"><span>中文</span>
+				  </label>
+			   </div>
+		    </div>
+
+		    <!-- 可折叠的链接、表单及其他内容 -->
+		    <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+		      <ul class="nav navbar-nav">
+		      	<li data-target="#" ><a href="../english.html">&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;<span class="sr-only">(current)</span></a></li>
+		        <li><a href="star-en.html">Policies<span class="sr-only">(current)</span></a></li>
+		        <li><a href="poem-en.html">Poems <span class="sr-only">(current)</span></a></li>
+				
+				<li><a href="cultural-relics-en.html">Antiques<span class="sr-only">(current)</span></a></li>
+				<li><a href="music-en.html">Instruments<span class="sr-only">(current)</span></a></li>
+				<li class="active"><a href="building-en.html">Buildings<span class="sr-only">(current)</span></a></li>
+				<li><a href="movie-en.html">Movies<span class="sr-only">(current)</span></a></li>
+				
+		      </ul>
+		    </div>
+		</nav>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12" >
+					<div class="container " id="public-box">
+						<div class="row">
+							<div class="col-md-12  fadeInUp animated">
+							<br>
+									<button id="close" type="button" class="close"><span aria-hidden="true">&times;</span></button>
+									<h2 class="text-center">
+										Do you really understand the new Chinese architecture?
+										
+									</h2>
+
+									<h4 style="position: absolute;right: 0;">resource:sohu</h4>
+									<br>
+									<br>
+								<p>
+									&nbsp;&nbsp;A city in the old country of the East, in the construction, if you completely lose your artistic identity, it is painful in terms of cultural expression and perspective. Because this fact clearly represents the decline of our culture, as it is eliminated. As the architect Liang Sicheng said, for a long time, our vision was filled with buildings named after the exotic, Tuscany, Mediterranean, American style, French romance... once became the fashion of China's real estate market. . Fortunately, with China's comprehensive national strength, international status and influence, and China's strategy of strengthening cultural self-confidence and cultural power, the "Chinese style" has now become the mainstream of the world. The "new Chinese architecture" with Chinese characteristics has gradually been accepted and even sought after by everyone, and it has been popular all over the country. <br> However, when you are enamored with it, do you really understand or understand what is a new Chinese architecture?
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div id="shift-button" class="col-md-12 col-sm-12 bounceInRight animated" style=" box-shadow: 0 0 0 0;">
+								<ul class="nav nav-tabs">
+								  <li role="presentation" class="active">
+								  	<a>
+								  		<img class="img-responsive img-circle" src="building-images/b-north.png" alt="北派"><br><p class="text-center">Northern Style</p>
+									</a>
+								   </li>
+								  <li role="presentation">
+								  	<a>
+										<img class="img-responsive img-circle" src="building-images/b-south.png" alt="南派"><br><p class="text-center">Southern Style</p>
+								  	</a>
+								  </li>
+								  <li role="presentation" class="pailie">
+								  	<a>
+								  		<img class="img-responsive img-circle" src="building-images/b-new-chinese-style.png" alt="新中派"><br><p class="text-center">New Style</p>
+								  	</a>
+								  </li>
+								</ul>
+								<div class="space"></div>	
+							</div>
+
+						</div>
+						<div class="row" >
+							<div class="col-md-12" id="public" style="margin:0 auto;">
+								<ul>
+									<li style="display: block;">
+										<div class="content-box bounceInUp animated">
+											<div class="row">
+												<h3>Northern Style – Splendid</h3>
+												<br>
+												<blockquote>
+													&nbsp;&nbsp;Fangxiang, courtyard and door are the core of this new Chinese architecture. High wall enclosing and paying attention to the sense of order, whether it is architectural planning or garden construction, it is mainly borrowed from the royal family. The materials are mostly gray brick and white marble, and the ancient palaces and palace elements such as the drum stone, the palace lantern and the plaque are introduced to form the majestic. Grand momentum.
+												</blockquote>
+											</div>
+										
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6">
+													<img class="center-block img-responsive" src="building-images/b-north-left.png" alt="北京首开住总棠颂别墅">
+													<br>
+												</div>
+												<div class="col-md-6 col-sm-6  col-xs-6">
+													<img class="center-block img-responsive" src="building-images/b-north-right.png" alt="北京泰禾中国院子">
+													<br>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-box  bounceInLeft animated">
+											<h3>Southern Style – Elegant</h3>
+											<br>
+											<blockquote>
+												&nbsp;&nbsp;White-walled blue tiles, horse-head walls and cornices are prominent features of this new Chinese-style building. The courtyard setting mainly highlights the small bridges flowing in the Jiangnan gardens. The overall image is like Chinese ink painting, which is light and elegant, and has a poetic beauty. Of course, the two can also be mutually interconnected. For example, the Northern School can learn from the southern gardening techniques in the garden, and the Southern School can also draw the representative elements of the northern architecture.
+
+											</blockquote>
+										
+											<div class="row">
+												<div class="col-md-6 col-sm-6  col-xs-6">
+													<img class="center-block img-responsive" src="building-images/b-south-left.png" alt="杭州绿城云栖玫瑰园">
+													<br>
+												</div>
+												<div class="col-md-6 col-sm-6  col-xs-6">
+													<img class="center-block img-responsive" src="building-images/b-south-right.png" alt="绿城杭州桃李春风">
+													<br>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-box  bounceInDown animated" >
+											<h3>New Style – Special</h3>
+											<br>
+											<blockquote>
+												&nbsp;&nbsp;From the literal point of view, the two can not be completely equal, but it is also a bit related. As we all know, Asia contains countries with a long history such as China, India, North Korea, South Korea and Japan. The cultures of Asian countries have certain similarities. This is because they are in Han, Tang, Ming and Qing. In the dynasty, Chinese culture has been in constant cultural integration with many Asian countries including Japan, South Korea, Thailand and Indonesia. It is worth noting that in modern times, regardless of geographical location, politics, economy, culture, etc., Asian culture also refers to oriental culture, so some new Chinese projects claim to be "Oriental", which is one-sided, and "new Asia is considered to be a "new Chinese style", which is even more a joke. In short, the new Asian architectural style pays attention to the flowing lines, the relaxing decoration, the retro Chinese style hollowing out... and pays attention to the “inner” spiritual realm (Zen culture) pursued by the oriental culture. shape. Sometimes it will be integrated into Western culture. The multi-element is inclusive, multi-handed and mixed, creating a new lifestyle that is compatible with classics and fashion, and the perfect combination of art and elegance, which is more in line with the tastes of contemporary people.
+											</blockquote>
+										
+											<div class="row">
+												<div class="col-md-6 col-sm-6  col-xs-6">
+													<img class="center-block img-responsive" src="building-images/b-shenzhen.png" alt="深圳万科第五园">
+													<br>
+												</div>
+												<div class="col-md-6 col-sm-6  col-xs-6">
+													<img class="center-block img-responsive" src="building-images/b-sanya.png" alt="三亚融创海棠湾">
+													<br>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- 底部版权部分 -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="container">
+					<div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12">
+						<h4 class="foot-text">About Us</h4>
+						<p class="about_us">
+							<a href="../readme.docx" data-toggle="tooltip" data-placement="right" title="our stories" target="_blank">readme</a><br>
+							About Us <br>
+							Guangxi University	<br>
+							Editor: Liberth Yu	<br>
+							Art Design: Yajing Wei <br>
+							Programmer: Aibing Chen; Jiayu Zhu <br>
+						</p>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<h4 class="foot-text">Supporting Websites</h4>
+						<a href="http://www.bootcss.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="we based on bootstrap3" target="_blank">Bootstrap Chinese Network</a><br>
+						<a href="http://jquery.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="we use jquery" target="_blank">jQuery</a><br>
+						<a href="https://daneden.github.io/animate.css/" class="about_us" data-toggle="tooltip" data-placement="right" title="funny animate" target="_blank">Animate.css</a><br>
+						<a href="http://www.htmleaf.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="" target="_blank">htmleaf.com</a><br>
+						<a href="http://glyphicons.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="fonts from Glyphicon Halflings " target="_blank">glyphicons</a><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<h4 class="foot-text">Another Languages</h4>
+						<a href="building-arcticle1.html" class="about_us" data-toggle="tooltip" data-placement="left" title="translate into Chinese">Chinese</a><br>
+						<h4 class="foot-text">Background Music</h4>
+						<p class="about_us" data-toggle="tooltip" data-placement="left" title="our backgroundmusic">yi People Dance music(彝族舞曲) <br>
+						from Hua Xia National Traditional Orchestra</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<!-- 返回顶部按钮 -->
+	<div id="turnback">
+		<div class="turnback">
+			<img src="public-img/turn-back.png">
+			<a class="turnback-text"><span>返回<br>顶部</span></a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="pubic-js/jquery-3.3.1.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件 -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="pubic-js/back.js"></script>
+	<script type="text/javascript" src="pubic-js/public.js"></script>
+	<script type="text/javascript">
+		function parallax() {
+		  window.onscroll = function() {
+		    var speed = 5.0;
+		    document.body.style.backgroundPosition = (-window.pageXOffset/speed)+"px "+(-window.pageYOffset/speed)+"px";
+		  }
+		}
+
+		parallax();
+	</script>
+	<script type="text/javascript">
+		//图片按钮切换开始
+		$("#shift-button ul li").mouseenter(function(){
+				// alert("切换")
+				c = $(this).index();
+				// c显示
+				$("#public li").eq(c).css('transition','all 0.3s').css('display','block').siblings('li').css('transition','all 0.3s').css('display','none');
+				$("#shift-button ul li").eq(c).addClass('active').siblings('li').removeClass('active');
+			})
+		//图片按钮切换结束
+
+		// 返回顶部脚本开始
+			$(window).scroll(
+			  			function()
+			  			{
+				  			if ($(window).scrollTop() <= 50) {
+							$("#turnback").fadeOut();
+							}
+							else if ($(window).scrollTop() > 200) {
+								$("#turnback").fadeIn();
+							}
+						 });
+
+			$("#turnback").click(function()
+					{
+						$("html,body").animate({scrollTop:0},500);
+						$(this).fadeOut();
+					});
+		// 返回顶部脚本结束
+
+
+	</script>
+	<script type="text/javascript" src="../index-js/jquery.bootstrap-autohidingnavbar.js"></script>
+	<script>
+	  $(".navbar-fixed-top").autoHidingNavbar();
+	  var state = $("#lang").attr("state");
+	  $("#lang").click(function(){
+	  	if (state == "1") {
+	  		$(this).attr('state','0');
+	  		$(window).attr('location','building-arcticle1.html');
+	  		$(this).reset();
+
+		  }
+		else if (state == "0") {
+			$(this).attr('state','1');
+			$(window).attr('location','building-arcticle1-en.html');
+		}
+		});
+
+	 
+	</script>
+</body>
+</html>

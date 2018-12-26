@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>关于我们</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- 我的css文件 -->
+	<link rel="stylesheet" type="text/css" href="public-css/public-css.css">
+	<!-- 动画库 -->
+	<link rel="stylesheet" type="text/css" href="public-css/animate.css">
+	<link rel="stylesheet" href="public-css/font-awesome.min.css">
+	<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    	body {
+    		background: url(../index-img/about-us-background.jpg);
+    		font-family: "weiruanyahei"
+    	}
+
+    	a {
+    		color: #000;
+    		text-decoration: none;
+    	}
+
+    	a:hover {
+			color: #000;
+    	}
+
+    	.space {
+    		height:50px;
+    	}
+
+    	.box {
+    		background-color: #CECECEFF;
+    		border-radius: 10px;
+    		margin-right: 10px;
+    		opacity: 0.8;
+    	}
+
+    	.box:hover {
+    		opacity: 1;
+    		background-color: #9B9B9BFF;
+    	}
+
+    	#myModal img {
+			margin-left: auto;
+			margin-right: auto;
+    	}
+
+    	/*.modal-content {
+    		background: url(public-img/public-background-container.jpg);
+    	}*/
+
+    	table {
+			margin: 0 auto;
+    	}
+
+    	/*@-webkit-keyframes rotation{
+		    from {-webkit-transform: rotate(0deg);}
+		    to {-webkit-transform: rotate(360deg);}
+		}
+
+    	.Rotation:hover {
+		     -webkit-transform: rotate(360deg);
+		     animation: rotation 3s linear infinite;
+		     -moz-animation: rotation 3s linear infinite;
+		     -webkit-animation: rotation 3s linear infinite;
+		     -o-animation: rotation 3s linear infinite;
+		}*/
+    </style>
+</head>
+<body>
+	<div class="container">
+		<ol class="breadcrumb fadeIn animated">
+			<li class="location">您所在位置：</li>
+		  <li class="homepage"><a href="../index.htm">首页</a></li>
+		  <li class="active about-head">关于我们</li>
+		</ol>
+		<div class="btn btn-success" id="translate" state="1">
+			<span>English</span>
+		</div>
+		<div class="row">
+			<h1 class="text-center fadeIn animated about">·关于我们·</h1>
+		</div>
+		<div class="space"></div>
+		<div class="row" id="photos">
+			<div class="col-md-3 col-sm-4 col-xs-4 fadeIn animated yu">
+				<img src="../index-img/cat1.png" alt="内容编辑" class="img-responsive Rotation">
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-4 fadeIn animated wei">
+				<img src="../index-img/cat2.png" alt="页面设计" class="img-responsive Rotation">
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-4 fadeIn animated chen">
+				<img src="../index-img/cat3.png" alt="技术支持" class="img-responsive Rotation">
+			</div>
+			<div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-offset-4 col-xs-4 fadeIn animated zhu">
+				<img src="../index-img/cat4.png" alt="技术支持" class="img-responsive Rotation">
+			</div>
+		</div>
+		<div class="space"></div>
+		<div class="row">
+			<h1 class="text-center fadeIn animated">·readme·</h1>
+		</div>
+		<div class="space"></div>
+		<div class="row">
+			<div class="col-md-3  col-sm-4 col-xs-4 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 box text-center fadeIn animated" type="button" data-toggle="modal" data-target="#myModal">
+				<div class="space "></div>
+				<i class="fa fa-file-word-o fa-5x" aria-hidden="true"></i>
+				<h3 class="read">阅读</h3>
+				<a href=""></a>
+				<div class="space"></div>
+			</div>
+			<!-- modal -->
+			<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog modal-lg" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h2 class="modal-title" id="myModalLabel">第十二届广西大学生计算机应用大赛《勿忘初心，勿忘文化根》主题网站技术说明文档</h2>
+			        <br>
+			      </div>
+			      <div class="modal-body">
+			        <img src="public-img/home.png" alt="首页" class="img-responsive">
+			        <br>
+			        <h3>前言</h3>
+			        <br>
+			        &nbsp;&nbsp;&nbsp;&nbsp;本网站以“不忘初心，文化自信”为主题，选择文化这一切入点展开网站内容，旨在介绍中国的独特文化以及代表文化在如今的发展。通过对六种文化的介绍，推动大学生了解传统优秀文化，感受优秀文化之魅力，从而树立对中国文化的认同与自信，继而成为文化传承的助力者。<br>
+					《勿忘初心，勿忘文化根》共分六个板块，其中第一个板块介绍当今的文化政策与形势，后五个板块分别介绍诗词、文物、音乐、建筑、电影这些常见的文化形式，并且选取了关于现今文化传承发展的例子，从侧面烘托出继续前进的主题。<br>
+					<h3>一．建站目的及功能定位</h3>
+					<br>
+					<h4>1.1建站目的</h4><br>
+					习近平在讲话中说：面向未来，面对挑战，全党同志一定要不忘初心、继续前进。文化是一个国家、一个民族的灵魂，是中华民族屹立于世界民族之林的根基。《勿忘初心，勿忘文化根》这一平台选取了多种文化形式进行介绍，旨在促进访问者对中华文化的了解与认同，从而实现文化自信。<br>
+					<h4>1.2功能定位</h4><br>
+					展示型、宣传性平台。
+					<br>
+					<h3>二．网站内容规划</h3><br>
+					<h4>2.1网站名称</h4><br>
+					《勿忘初心，勿忘文化根》
+					<h4>2.2网站主题</h4><br>
+					选择几种代表性文化，展示其发展历程与在现今的形式创新发展<br>。
+					<h4>2.3网站语言</h4><br>
+					<br>简体中文及英文。
+					<h4>2.4网站内容</h4><br>
+					网站从 “文化”角度，展现当今时代的传统文化发展创新情况。<br>
+					<h4>2.5网站拓扑图</h4><br>
+					<img src="public-img/tuopu.png" alt="" class="img-responsive"><br>
+					<h3>三．网站设计</h3><br>
+					<h4>3.1总体设计</h4><br>
+					网站共有三级页面，以灰绿为主色调，目的是营造古朴大气的风格。顶部为导航栏，点击可进入各版块。底部为版权页，附有团队资料链接、技术文档页面链接、技术支持网站、背景音乐信息。<br>
+					<img src="public-img/home.png" alt=""  class="img-responsive"><br>
+					<p class="text-center">图3-1 网站顶部</p><br>
+					<h4>3.2首页设计</h4><br>
+					网站首页选择了简洁的风格。第一部分是网站标题，第二部分是六个板块的介绍。“文化自信”作为重点内容置于前部，其图片显示方式有别于其它五个板块。将鼠标移至各版块代表图片后会浮现对该板块的简介，帮助访问者了解板块主题。<br>
+					<img src="public-img/confidence-home.png" alt="" class="img-responsive">
+					<p class="text-center">图3-2 首页交互效果</p><br>
+					<h4>3.3分页设计</h4><br>
+					本网站各子版块采用相同的模板，顶部为相关图片及板块名称。针对各版块的内容体裁、字数不同，相应地选择了不同的表现形式。<br>
+					<h4>3.3.1文化自信</h4><br>
+					本页面旨在介绍文化发展政策与环境，选择了两篇习近平对于文化发展的规划与建议。采取文章列表的形式展示。<br>
+					<img src="public-img/confidence.png" alt="" class="img-responsive"><br>
+					<p class="text-center">图3-3 文化自信</p><br>
+					<h4>3.3.2诗词歌赋</h4><br>
+					本页面的主题是古诗，选择了一个本站原创视频与两篇文章，其中一篇是大学生所写的自己与古诗的关系、对古诗的思考，另一篇则是对古典文学的推崇者、发展者余光中先生的介绍。
+					<img src="public-img/poem.png" alt="" class="img-responsive"><br>
+					<img src="public-img/poem2.png" alt="" class="img-responsive"><br>
+					<h4>3.3.3盘彝画瓷</h4><br>
+					本页面的主题是文物。选择了四篇介绍文物情况的文章，其中既有对文物的介绍，也有对中国在文物保护方面取得的成果的宣传。<br>
+					<img src="public-img/building·2.png" alt="" class="img-responsive"><br>
+					<h4>3.3.4吹弹拉打</h4><br>
+					本页面的主题是传统音乐、乐器。第一部分是对九种传统乐器的介绍，采用boostrap的轮播图作为展示形式。第二部分选取了三篇关于传统音乐创新的文章。<br>
+					<img src="public-img/music.png" alt="" class="img-responsive"><br>
+					<h4>3.3.5亭台轩榭</h4><br>
+					本板块的主题是传统建筑。第一部分是国内几种著名古建筑的图片展示，点击后可以查看建筑信息。第二部分文章列表有两篇文章，分别关于中式建筑形制的创新与古建筑的保护。
+					<img src="public-img/building.png" alt="" class="img-responsive"><br>
+					<h4>3.3.6中国电影</h4><br>
+					本版块的主题是电影，既包含皮影戏这一传统艺术，也包括中国元素在电影中的体现。
+					<img src="public-img/movie.png" alt="" class="img-responsive"><br>
+					<h3>四．技术难点及创新点</h3><br>
+					<h4>4.1．我们主要采用了bootstrap前端开发框架、jQuery库、jQuery之家的部分插件及配合使用animate.css动画技术。在每个链接上我们都尽量实现本地化，使得在不联网的情况下实现我们要表达的效果。</h4><br>
+					<h4>4.2．为适应不同屏幕下的显示效果，在接到设计稿开始，我们就对网页进行了栅格化处理，运用bootstrap全局css样式，使个板块内容呈栅格布局，这样有助于不同分辨率下网页内容自动调整位置，并且配合media查询对细节处做了很多适配优化。此外，我们的网页导航栏板块等都直接使用了bootstrap内置的组件及调用javascript插件以快速开发实现效果。我们坚持充分利用好单个开发框架的原则，减少代码冗余。</h4><br>
+					<h4>4.3在完成总体效果后，我们在需要刷新页面时呈现加载效果的地方加上了各类生动的animate动画，避免刷新时效果单调无趣，增加刷新界面的美观、可玩性。此外，在每篇文章背景上我们采用视觉差效果，美化长篇文章的显示效果，让读者在舒适的背景下阅读文章，减少页面枯燥单调带来的影响。</h4><br>
+					<h3>五．运行环境</h3><br>
+					建议在谷歌浏览器或者谷歌内核的浏览器中浏览以实现最佳展示效果<br>
+					<h3>六．网站访问和网页浏览</h3><br>
+					（1）网站网址：http://210.36.17.207/4/<br>
+					（2）网页分辨率： 1920*1080 <br>
+					（3）浏览器： chrome	<br>
+					<h3>七、附录</h3><br>
+					<form action="value.asp"  method="get">
+						<caption>
+							
+							<p><h4 class="text-center">成员信息表</h4><br>
+							<p class="text-center">学校名称：广西大学</p>
+							</p>
+						</caption>
+						<table class="table-striped table-bordered table-responsive table-hover table-condensed">
+							<tr>
+								<td>作者或合<br>作者姓名</td>
+								<td> 年级、专业、班别</td>
+								<td> 联系电话</td>
+								<td> E-mail</td>
+								<td> 分工</td>
+							</tr>
+							<br>
+							<tr>
+								<td>韦雅静</td>
+								<td> 2017级新闻传播学类173班</td>
+								<td> 18076544124</td>
+								<td>Don67u@163.com</td>
+								<td> 设计</td>
+							</tr>
+							<br>
+							<tr>
+								<td>陈爱炳</td>
+								<td> 2017级木材科学与工程172班	</td>
+								<td> 18888491031</td>
+								<td>chenaibing@st.gxu.edu.cn</td>
+								<td> 前端</td>
+							</tr>
+							<br>
+							<tr>
+								<td>于思琪</td>
+								<td> 2017级新闻传播学类174班</td>
+								<td> 13978383267</td>
+								<td>574391002@qq.com</td>
+								<td> 内容</td>
+							</tr>
+							<br>
+							<tr>
+								<td>朱嘉宇</td>
+								<td> 2014级计算机与电子信息中法1班</td>
+								<td> 15994326732</td>
+								<td>349561293@qq.com</td>
+								<td> 前端</td>
+							</tr>
+						</table>
+					</form>
+					
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<a href="../readme.docx">
+				<div class="col-md-3 col-sm-4 col-xs-4 box text-center fadeIn animated">
+					<div class="space"></div>
+					<i class="fa fa-download fa-5x" aria-hidden="true"></i>
+					<h3 class="downloadit">下载</h3>
+					<div class="space"></div>
+				</div>
+			</a>
+		</div>
+		<div class="space"></div>
+		<div class="row">
+			<h4 class="text-center fadeIn animated copyrighthere">Copyright© 2018 广西大学</h4>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="pubic-js/jquery-3.3.1.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件 -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$('#myModal').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+
+		var state = $("#translate").attr("state");
+		$("#translate").click(function(){
+		  	if (state == "1") {
+		  		  $(this).attr('state','0');
+		  		 $(".about").text("·About Us·");
+			     $(".location").text("Your location");
+			     $(".homepage a").text("Home").attr('href','../english.html');
+			     $(".about-head").text("About Us");
+			     $(".yu img").attr('src','../index-img/cat1-en.png');
+			     $(".wei img").attr('src','../index-img/cat2-en.png');
+			     $(".chen img").attr('src','../index-img/cat3-en.png');
+			     $(".zhu img").attr('src','../index-img/cat4-en.png');
+			     $(".read").text('read');
+			     $(".downloadit").text('download');
+			     $(".copyrighthere").text('Copyright© 2018 GuangXi University');
+			     // alert(state);
+			  }
+			else if (state == "0") {
+				 // alert(state);
+				 $(this).attr('state','1');
+				 $(".about").text("·关于我们·");
+			     $(".location").text("您所在的位置");
+			     $(".homepage").text("首页");
+			     $(".about-head").text("关于我们");
+			     $(".yu img").attr('src','../index-img/cat1.png');
+			     $(".wei img").attr('src','../index-img/cat2.png');
+			     $(".chen img").attr('src','../index-img/cat3.png');
+			     $(".zhu img").attr('src','../index-img/cat4.png');
+			     $(".read").text('阅读');
+			     $(".downloadit").text('下载');
+			     $(".copyrighthere").text('Copyright© 2018 广西大学');
+			}
+		})
+    </script>
+</body>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>亭台轩榭</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- 我的css文件 -->
+	<link rel="stylesheet" type="text/css" href="public-css/public-css.css">
+	<!-- 动画库 -->
+	<link rel="stylesheet" type="text/css" href="public-css/animate.css">
+	<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	body {
+			background: url(building-images/background.png)  no-repeat;
+			background-size: cover;
+    	}
+
+    	img {
+    		display: block;
+		    max-width: 100%;
+		    height: auto;
+    	}
+
+    	.media img {
+    		margin-top: 10px;
+    		margin-bottom: 10px;
+    		margin-left: auto;
+    		margin-right: auto;
+    	}
+
+    	.blank {
+    		height: 30px;
+    		width: 100%;
+    	}
+
+    	.arcticle {
+    		margin-top: 8%;
+    		/*margin-bottom: 5%;*/
+    		/*border:3px solid #ED1128FF;*/
+    		box-shadow: 0 2px 8px 0 #939694;
+    		border-radius: 10px;
+    	}
+
+    	.arc2 {
+    		margin-bottom: 8%;
+    	}
+
+    	.sights {
+    		position: relative;
+    	}
+
+    	.modal-btn {
+    		position: absolute;
+    		top: 0;
+			left: 6%;
+			bottom: 0;
+			right: 0;
+			width: 88%;
+			height: 100%;
+			content: '';
+			background:rgba(0,0,0,0.2);
+			transform: scale(0.7);
+			transition: all 0.3s;
+			cursor: pointer;
+			opacity: 0;
+			text-decoration: none;
+			
+    	}
+
+    	.modal-btn h3 {
+    		margin-top: 30%;
+
+    	}
+
+    	.col-md-3.col-sm-4.col-xs-6:hover .sights{
+			opacity: 0.5;
+    	}
+
+    	.col-md-3.col-sm-4.col-xs-6:hover .modal-btn {
+    		transform: scale(1);
+			opacity: 1;
+			color: #000000;
+			text-decoration: none;
+    	}
+
+    	.readwhole {
+    		position: absolute;
+    		top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+			background:rgba(0,0,0,0.2);
+			transform: scale(0.7);
+			transition: all 0.3s;
+			cursor: pointer;
+			opacity: 0;
+			text-decoration: none;
+			border-radius: 10px;
+    	}
+
+    	.readwhole .center-block {
+    		margin-top: 9%;
+    	}
+
+    	.media:hover .media-object{
+			opacity: 0.5;
+    	}
+
+    	.media:hover .readwhole {
+    		transform: scale(1);
+			opacity: 1;
+			text-decoration: none;
+    	}
+    </style>
+
+</head>
+<body>
+
+	<!-- 导航栏 -->
+	<header>
+
+		<nav class="navbar navbar-default navbar-fixed-top fadeIn animated">
+		  <div class="container-fluid">
+		    <!-- 移动设备折叠菜单 -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a href="../index.htm" class="navbar-brand"><img src="public-img/nav-name.png" alt="素心阁" class="img-responsive"></a>
+		      <div class="navbar-brand checkbox checkbox-slider--b-flat checkbox-slider-md" id="lang" state='1'>
+				  <label>
+				    <input type="checkbox"><span>English</span>
+				  </label>
+			   </div>
+		    </div>
+
+		    <!-- 可折叠的链接、表单及其他内容 -->
+		    <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+		      <ul class="nav navbar-nav">
+		      <li data-target="#" ><a href="../index.htm">&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;<span class="sr-only">(current)</span></a></li>
+		        <li><a href="star.html">文化自信<span class="sr-only">(current)</span></a></li>
+		        <li data-target="body" ><a href="poem.html">诗词歌赋 <span class="sr-only">(current)</span></a></li>
+				 
+				<li data-target="#hanfu"><a href="cultural-relics.html">盘彝画瓷<span class="sr-only">(current)</span></a></li>
+				<li data-target="music.html"><a href="music.html">吹弹拉打<span class="sr-only">(current)</span></a></li>
+				<li class="active" data-target="#music"><a href="building.html">亭台轩榭<span class="sr-only">(current)</span></a></li>
+				<li data-target="#building"><a href="movie.html">中国电影<span class="sr-only">(current)</span></a></li>
+				
+		      </ul>
+		    </div>
+		</nav>
+	</header>
+
+	<section>
+		<div class="row  fadeIn animated">
+				<img src="building-images/banner.jpg" alt="亭台轩榭" class="img-responsive">
+		</div>
+
+		<div class="blank"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/11.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal1" class="modal-btn">
+							<h2 class="text-center">宁波天一阁</h2>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">宁波天一阁</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>天一阁位于浙江宁波市区，是中国现存最早的私家藏书楼，也是亚洲现有最古老的图书馆和世界最早的三大家族图书馆之一。天一阁占地面积2.6万平方米，建于明朝中期，由当时退隐的兵部右侍郎范钦主持建造。</p>
+						        <img src="building-images/11.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/12.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal2" class="modal-btn">
+							<h2 class="text-center">西安鼓楼</h2>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">西安鼓楼</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>鼓楼位于西安城内西大街北院门的南端，东与钟楼相望，始建于明太祖朱元璋洪武十三年，比钟楼大四岁，迄今已有625年历史。清康熙三十八年和清乾隆五年先后两次重修。楼上原有巨鼓一面，每日击鼓报时，故称“鼓楼”。历经岁月沧桑，如今巨鼓早已不存，惟余鼓楼巍然耸立。 是所存在中国最大的鼓楼之一。</p>
+						        <img src="building-images/12.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/13.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal3" class="modal-btn">
+							<h2 class="text-center">五台山<br>佛光寺东大殿</h2>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">五台山佛光寺</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>五台山佛光寺属世界文化遗产，位于山西省五台县的佛光新村，寺内正殿即东大殿，建于唐朝大中十一年，即公元 857年。
+									佛光寺大殿现为中国现存规模最大的唐代木构建筑暨第二早的木结构建筑（仅次于五台县的南禅寺大殿）。它打破了日本学者的断言：在中国大地上没有唐朝及其以前的木结构建筑，因此被建筑学家梁思成誉为“中国第一国宝”。 寺内唐代木构大殿、彩塑、壁画、墨书题记、金建文殊殿、魏唐墓塔、唐石经幢等，都是具有高度历史、艺术价值的珍贵文物。
+								</p>
+								<img src="building-images/13.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/14.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal4" class="modal-btn">
+							<h2 class="text-center">晋祠</h2>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">晋祠</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>晋祠，原为晋王祠（唐叔虞祠），为纪念晋（汾）王及母后邑姜而兴建。位于山西太原市西南悬瓮山麓的晋水之滨，祠内有几十座古建筑，环境幽雅舒适，风景优美秀丽，素以雄伟的建筑群、高超的塑像艺术闻名于世。是集中国古代祭祀建筑、园林、雕塑、壁画、碑刻艺术为一体的唯一而珍贵的历史文化遗产，也是世界建筑、园林、雕刻艺术中心。难老泉、侍女像、圣母像被誉为“晋祠三绝”。</p>
+						        <img src="building-images/14.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blank"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/21.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal5" class="modal-btn">
+							<h2 class="text-center">安徽省黟县古民居</h2>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">安徽省黟县古民居</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>安徽省黟县西递、宏村两处古民居以其保存良好的传统风貌被列入世界文化遗产，这是黄山风景区内的自然与文化景观第二次登录世界文化遗产目录，也是中国继北京后第二座同时拥有两处以上世界遗产的城市，同时也是世界上第一次把民居列入世界遗产名录。西递、宏村古民居位于中国东部安徽省黟县境内的黄山风景区。西递和宏村是安徽南部民居中最具有代表性的两座古村落，它们以世外桃源般的田园风光、保存完好的村落形态、工艺精湛的徽派民居和丰富多彩的历史文化内涵而闻名天下。</p>
+						        <img src="building-images/21.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/22.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal6" class="modal-btn">
+							<h2 class="text-center">武当山古建筑</h2>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">武当山古建筑</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>武当山古建筑中的宫阙庙宇集中体现了中国元、明、清三代世俗和宗教建筑的建筑学和艺术成就。古建筑群座落在沟壑纵横、风景如画的湖北省武当山麓，在明代期间逐渐形成规模，其中的道教建武当山古建筑群筑可以追溯到公元7世纪，这些建筑代表了近千年的中国艺术和建筑的最高水平。</p>
+						        <img src="building-images/22.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/23.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal7" class="modal-btn">
+							<h2 class="text-center">承德避暑山庄</h2>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">承德避暑山庄</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>承德避暑山庄，中国古代帝王宫苑，清代皇帝避暑和处理政务的场所。位于河北省承德市市区北部。始建于一七零三年，历经清康熙、雍正、乾隆三朝，耗时八十九年建成。与全国重点文物保护单位颐和园、拙政园、留园并称为中国四大名园。一九九四年十二月，避暑山庄及周围寺庙（热河行宫）被列入世界文化遗产名录。拥有殿、堂、楼、馆、亭、榭、阁、轩、斋、寺等建筑一百余处。是中国三大古建筑群之一。</p>
+						        <img src="building-images/23.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<img src="building-images/24.png" alt="" class="img-responsive sights">
+						<a data-toggle="modal" data-target="#Modal8" class="modal-btn">
+							<h2 class="text-center">福建土楼</h2>
+							<img src="building-images/read.png" alt="更多" class="center-block">
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">福建土楼</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>福建土楼，包括闽南土楼和一部分客家土楼，总数约三千余。通常是指闽西南独有约利用不加工的生土，夯筑承重生土墙壁所构成的群居和防卫合一的大型楼房，形如天外飞碟，散布在青山绿水之间。主要分布地区以中国福建西南山区，客家人和闽南人聚居的福建、江西、广东三省交界地带，包括以闽南人为主的漳州市，闽南人与客家人参半的龙岩市。福建土楼是世界独一无二的大型民居形式，被称为中国汉族传统民居的瑰宝。</p>
+						        <img src="building-images/24.png" alt="" class="img-responsive center-block">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-10 arcticle jackInTheBox animated">
+				  	<div class="media">
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					    <a href="#">
+					      <img src="building-images/arti1.png" alt="">
+					    </a>
+					  </div>
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					  	<br>
+					    <h3 class="media-heading">新中式建筑你真懂吗</h3>
+					    <br>
+					    <p>一个东方老国的城市，在建筑上，如果完全失掉自己的艺术特性，在文化表现及观瞻方面都是大可痛心的。因这事实明显的代表着我们文化衰落，至于消灭的现象。</p>
+					    <br>
+					  </div>
+					  <a href="building-arcticle1.html" class="readwhole">
+					  	<img src="star-images/readwhole.png" alt="阅读全部" class="center-block">
+					  </a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-10 arcticle jackInTheBox animated">
+				  	<div class="media">
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					    <a href="#">
+					      <img src="building-images/arc2.png" alt="">
+					    </a>
+					  </div>
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					  <br>
+					    <h3 class="media-heading">张力智:古建筑群复苏了湖头的文化记忆</h3>
+					    <br>
+					    <p>“有幸零距离目睹安溪湖头这些闽南古厝，心情就像多年不见的老朋友突然间偶遇那样激动！”22日，清华大学建筑学院助理研究员张力智探访湖头镇新衙、旧衙等明清时期古民居、古建筑时赞叹道。</p><br>
+					  </div>
+					  <a href="building-arcticle2.html" class="readwhole">
+					  	<img src="star-images/readwhole.png" alt="阅读全部" class="center-block">
+					  </a>
+					</div>
+				  </div>
+
+			</div>
+			<div class="blank"></div>
+		</div>
+
+	</section>
+
+	<!-- 底部版权部分 -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="container">
+					<div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-6 ">
+						<div class="container-fluid about-us">
+							<a href="about-us.html">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="../index-img/about-us.png" alt="互助小组" class="img-responsive">
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<h4 class="foot-text">关于我们</h4>
+								</div>
+							</a>
+						</div>
+						<div class="container-fluid about-us">
+							<a href="../readme.docx" data-toggle="tooltip" data-placement="top" title="点击下载查看">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="../index-img/readme.png" alt="readme" class="img-responsive">
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<h4 class="foot-text">readme</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<h4 class="foot-text">技术支持</h4>
+						<a href="http://www.bootcss.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="我们基于bootstrap3" target="_blank">bootstrap中文网</a><br>
+						<a href="http://jquery.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="我们使用了jquery" target="_blank">jQuery</a><br>
+						<a href="https://daneden.github.io/animate.css/" class="about_us" data-toggle="tooltip" data-placement="right" title="动画效果技术" target="_blank">Animate.css动画库</a><br>
+						<a href="http://www.htmleaf.com/" class="about_us" data-toggle="tooltip" data-placement="right" title="运用插件帮助我们美化界面" target="_blank">jQuery之家</a><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<h4 class="foot-text">更多</h4>
+						<a href="building-en.html" class="about_us" data-toggle="tooltip" data-placement="left" title="点击切换">英文版</a><br>
+						<p href="" class="about_us" data-toggle="tooltip" data-placement="left" title="我们的背景音乐">背景音乐：<br>彝族舞曲-华夏民族乐团</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- 返回顶部按钮 -->
+	<div id="turnback">
+		<div class="turnback">
+			<img src="public-img/turn-back.png">
+			<a class="turnback-text"><span>返回<br>顶部</span></a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="pubic-js/jquery-3.3.1.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件 -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="pubic-js/back.js"></script>
+	<script type="text/javascript" src="pubic-js/public.js"></script>
+	<script type="text/javascript">
+		$('#Modal1').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal2').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal3').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal4').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal5').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+
+		$('#Modal6').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal7').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$('#Modal8').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+	</script>
+	<script type="text/javascript" src="../index-js/jquery.bootstrap-autohidingnavbar.js"></script>
+	<script>
+	  $(".navbar-fixed-top").autoHidingNavbar();
+
+	   var state = $("#lang").attr("state");
+	  $("#lang").click(function(){
+	  	if (state == "1") {
+	  		$(this).attr('state','0');
+	  		$(window).attr('location','building-en.html');
+	  		$(this).reset();
+
+		  }
+		else if (state == "0") {
+			$(this).attr('state','1');
+			$(window).attr('location','building.html');
+		}
+		})
+	</script>
+</body>
+</html>
